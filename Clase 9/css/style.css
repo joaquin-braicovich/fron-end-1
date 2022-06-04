@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-image: url('/img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+header p{
+    background-color: #242424;
+    background-size: contain;
+    color: white;
+    font-size: large;
+}
+
+main {
+    background-image: url('/img/background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1500px;
+}
+header h3 {
+    color: white;
+    text-align: right;
+    font-size: xx-large;
+    letter-spacing: 5px;
+}
+{
+    background-color: yellow;
+    text-align: right;
+    font-size: xx-large;
+}
+#texto{
+    text-align: right;
+}
+.blanco-marron{
+    color: #3C2313;
+    background-color: #FFFFFF;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.descuento {
+    color: #3C2313;
+    text-align: right;
+    font-size: xx-large;
+}
+.img {
+    text-align: right;
+}
+.imgpatita {
+    color: #F0A83E;
+    font-size: 200px;
+    text-align: center;
+}
+h1 {
+    color: #3C2313;
+    font-size: 100px;
+    text-align: center;
+}
+.categorias {
+    color: gray;
+    font-size: 50px;
+    text-align: center;
+}
+.imgcategorias {
+    text-align:center;
+    height: 500px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#p2{
+    font-size: 25px;
+    color: #F0A83E;
+}
+#img1{
+    text-align: left;
+    height: 500px;
+}
+h2{
+    text-align: center;
+    color: #3C2313;
+    font-size: 100px;
+}
+#con2{
+    text-align: center;
+}
+.con3{
+    color: #FFFFFF;
+    background-color: #3C2313;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+#con4{
+    text-align: center;
+}
+.con5{
+    background-color: grey;
+    color: white;
+    font-size: 55px;
+}
+.con6{
+    background-color: #F0A83E;
+    color: white;
+    font-size: 55px;
+}
+footer{
+    background-color: #3C2313;
+    color: white;
+    font-size: 50px;
+}
+footer p{
+    color: gray
+
+}
+.con7{
+    text-align: right;
+}
+.con8{
+    background-color: #242424;
+    background-size: contain;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+

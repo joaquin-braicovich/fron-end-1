@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+
+body {
+    font-family: 'Open Sans', sans-serif;;
+    background-image: url('https://i.postimg.cc/jSVNKHmv/backgroundimage2.png');
+    background-size: contain;
+    background-size: 700px;
+    background-repeat: no-repeat;
+}
+header {
+    background-image: url('https://i.postimg.cc/15V6LCCf/fotopersonal.jpg');
+    background-size: contain;
+    background-size: 130px;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: black;
+    font-size: 40px;
+    text-align: left;
+    position: relative;
+    left: 135px;
+    top: 1px;
+}
+.parrafo-top {
+    font-size: medium;
+    text-align: left;
+    position: relative;
+    right: -135px;
+    
+}
+.redes-sociales{
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 29px;
+}
+
+
