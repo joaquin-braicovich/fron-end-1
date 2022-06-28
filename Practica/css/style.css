@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family, spotify-circular), Helvetica, Arial,
+    sans-serif;
+}
+header {
+  align-items: center;
+  background-color: #2d3232;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  height: 336;
+  width: 1050px;
+  gap: 20px;
+  line-height: 70px;
+}
+h1 {
+  font-size: 80px;
+}
+.contenedor_canciones {
+  background-color: #171919;
+  height: 647px;
+  width: 1050px;
+}
+.cancion {
+  align-items: center;
+  background-color: #171919;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  height: 50px;
+  width: 1000px;
+  margin: 3px;
+}
+.cancion:hover {
+  background-color: #2a2a2a;
+  text-decoration: underline;
+}
+.header_canciones {
+  align-items: center;
+  background-color: #171919;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  height: 100px;
+  justify-content: space-between;
+  width: 1050px;
+  margin-bottom: 5px;
+  padding: 0px 25px 0px 25px;
+}
+img {
+  transition: border-radius 500ms;
+}
+img:hover {
+  border-radius: 50px;
+}
+i {
+  font-size: 50px;
+  padding: 15px;
+  color: #bababa;
+}
+i:hover {
+  color: white;
+  background-color: grey;
+  border-radius: 50%;
+}
+.fa-regular.fa-circle-down,
+.fa-solid.fa-user-plus,
+.fa-solid.fa-ellipsis,
+.fa-solid.fa-magnifying-glass {
+  font-size: 25px;
+}
+.fa-solid.fa-play {
+  transition: font-size 250ms;
+  color: #1ed760;
+}
+.fa-solid.fa-play:hover {
+  font-size: 60px;
+  background-color: #171919;
+}
+.fa-solid.fa-heart {
+  color: #1ed760;
+  font-size: 20px;
+  border-radius: 50px;
+}
+.fa-solid.fa-heart:hover {
+  background-color: #2a2a2a;
+}

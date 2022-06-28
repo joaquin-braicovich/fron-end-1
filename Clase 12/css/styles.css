@@ -10,85 +10,88 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
+header {
+    background-color: #1CD1B0;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+}
+.textoheader{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 15px;
+    font-weight: lighter;
+}
+.textoh1{
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+    height: 100px;
+    color: black;
+    font-weight: lighter;
+    padding-left: 15px;
+}
 .contenedor{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin: 135px 0px;
 }
 .box{
     background-color: #F3F3F3;
     color: black;
     width: 300px;
     height: 520px;
-    margin: 5px;
+    margin: 20px;
     border-bottom: 1px #C5C5C5 solid;
-}
-header {
-    background-color: #1CD1B0;
-    height: 50px;
-    color: black;
-    font-weight: 500;
-    font-size: large;
-}
-.textoheader{
     position: relative;
-    bottom: -15px;
-    right: -15px;
-}
-h1{
-    background-color: #00669F;
-    height: 100px;
-    color: black;
-    font-weight: lighter;
-}
-.textoh1{
-    position: relative;
-    bottom: -30px;
-    right: -15px;    
-}
-.space{
-    height: 150px;
+    border-radius: 10px;
 }
 .portada{
     background-image: url("/img/portadabatman.png");
     background-repeat: no-repeat;
+    background-size: cover;
     height: 180px;
-    position: relative;
-    top: -19px;
 }
 .portada2{
     background-image: url("/img/portadaharley.png");
     background-repeat: no-repeat;
+    background-size: cover;
     height: 180px;
-    position: relative;
-    top: -19px;
 }
 .portada3{
     background-image: url("/img/supermanfondo.png");
     background-repeat: no-repeat;
+    background-size: cover;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     height: 180px;
-    position: relative;
-    top: -19px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 105px;
+    right: 90px;
 }
 .icon img {
     border-radius: 100%;
 }
-.icon{
-    text-align: center;
-    position: relative;
-    top: -80px;
-}
 h2{
+    margin-top: 55px;
     text-align: center;
-    position: relative;
-    top: -30px;
 }
-.text{
-    position: relative;
+p{
+    margin-top: 20px;
+    padding-left: 8px;
     text-align: left;
-    top: -30px;
+}
+#tx{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 100%;
 }
 .boton{
     background-color: #00669F;
@@ -96,8 +99,7 @@ h2{
     height: 50px;
     width: 120px;
     text-align: center;
-    position: relative;
-    right: -90px;    
+    border-radius: 10px;
 }
 span{
     position: relative;
@@ -114,15 +116,46 @@ footer{
     right: -10px;
 }
 
-/* @media screen and (min-width: 600px){
-    .box {
-        width: 90%;
+@media screen and (max-width: 697px){
+    div.contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-} */
-/* @media screen and (min-width: px){
-    .portada,
-    .portada2,
-    .portada3 {
-        width: 30%;
+}
+@media screen and (max-width: 697px){
+    .box{
+        background-color: #F3F3F3;
+        color: black;
+        width: 400px;
+        height: 620px;
+        margin: 5px;
+        border-bottom: 1px #C5C5C5 solid;                                                               
     }
-} */
+}
+@media screen and (max-width: 697px){
+    header{
+        position: sticky; top: 0px;
+        z-index: 1;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1CD1B0;
+        color: white;
+}
+}
+@media screen and (max-width: 697px){
+    h1{
+        padding: 0px 260px 0px 260px;
+    }
+}
+@media screen and (max-width: 697px){
+    .icon{
+        position: absolute;
+        top: 105px;
+        right: 140px;
+    }
+}

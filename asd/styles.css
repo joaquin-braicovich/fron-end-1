@@ -1,0 +1,22 @@
+.contenedor_titulos {
+  align-items: center;
+  background-color: burlywood;
+  background-size: contain;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 320px;
+}
+.numeros {
+  background-color: orange;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 30px;
+}
+.titulo {
+  font-size: 1rem;
+  color: #242d52;
+  font-weight: bold;
+}

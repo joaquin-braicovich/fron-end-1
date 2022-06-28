@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-image: url("/img/header.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bolder;
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+legend {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.form_contenedor {
+  align-items: center;
+  background-color: rgb(28, 83, 155);
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 400px;
+  justify-content: center;
+  width: 400px;
+  padding-top: 5px;
+}
+.form_contenedor_encuesta {
+  align-items: center;
+  background-color: rgb(28, 83, 155);
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}

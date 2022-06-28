@@ -1,0 +1,256 @@
+:root{
+    --colorPrimario: #F0A83E;
+    --colorSecundario: #3C2313;
+    --colorTerciario: #F3F3F3;
+    --colorCuaternario: grey;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+}
+.header__primero{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: var(--colorTerciario);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+    height: 30px;
+}
+.header__categorias{
+    align-items: center;
+    background-color: var(--colorPrimario);
+    background-size: cover;
+    color: var(--colorTerciario);
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+.portada{
+    background-image: url('/img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 700px;
+    width: auto;
+}
+.texto__portada{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 60px;
+}
+h2{
+    display: flex;
+    background-color: var(--colorTerciario);
+    border-radius: 5px;
+    color: var(--colorSecundario);
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 10px;
+}
+h4{
+    display: flex;
+    justify-content: center;
+    color: var(--colorSecundario);
+    font-size: 20px;
+    font-weight: lighter;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    background-color: var(--colorPrimario);
+    background-size: contain;
+    border-radius: 5px;
+    color: var(--colorTerciario);
+    font-weight: lighter;
+    margin-left: 100px;
+    padding: 15px 0px;
+    width: 150px;
+    
+}
+.patita{
+    color: var(--colorPrimario);
+    font-size: 71px;
+    padding-top: 20px;
+    text-align: center;
+}
+h1{
+    color: var(--colorSecundario);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+}
+p{
+    color: var(--colorCuaternario);
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 20px;
+    line-height: 18px;
+    text-align: center;
+}
+section span{
+    color: var(--colorPrimario);
+}
+.section__productos{
+    color: var(--colorSecundario);
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0px;
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    margin: 50px;
+}
+legend{
+    color: var(--colorSecundario);
+    font-size: 30px;
+    font-weight: bold;
+}
+.form__input{
+    background-color: var(--colorSecundario);
+    border-radius: 10px;
+    color: var(--colorTerciario);
+    width: 340px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.botones{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.div_contenedor{
+    align-items: center;
+    background-color: var(--colorPrimario);
+    background-size: contain;
+    color: var(--colorTerciario);
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0px 25px 0px;
+    line-height: 23px;
+}
+.div__contenedor2{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0px 50px 0px 50px;
+}
+#novedades{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 25px;
+    gap: 10px;
+    margin-left: 50px;
+    line-height: 23px;
+}
+#Email{
+    display: inline-block;
+    background-color: var(--colorTerciario);
+    border-radius: 5px;
+    color: var(--colorCuaternario);
+    font-weight: 400;
+    font-size: 9px;
+    padding: 15px 0px 0px 15px;
+    line-height: 11px;
+    width: 271px;
+    height: 40px;
+}
+#Suscripcion{
+    display: inline-block;
+    background-color: var(--colorSecundario);
+    border-radius: 5px;
+    color: var(--colorTerciario);
+    font-weight: 700;
+    font-size: 9px;
+    padding: 15px 0px 0px 9px;
+    line-height: 11px;
+    width: 70px;
+    height: 40px;
+}
+.footer_contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorSecundario);
+    background-size: contain;
+    padding: 35px 35px 20px 35px
+}
+.footer__categorias{
+    color: var(--colorTerciario);
+    font-size: 20px;
+}
+#datos__footer{
+    color: var(--colorCuaternario);
+    font-size: 15px;
+    padding: 0px 24px 24px 20px ;
+}
+.footer__end{
+        background-color: black;
+        color: var(--colorTerciario);
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 5px;
+        height: 30px;
+}
+.footer_logo{
+    color: black;
+}
+@media screen and (max-width: 830px){
+    .header__primero, .footer__end, .header__categorias, h2,h4, h3{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 421px){
+    .header__categorias{
+        display: flex;
+        font-size: 10px;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 830px){
+    .section__productos, .div_contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 830px){
+    .portada{
+        display: flex;
+        background-size: cover;
+        height: 250px;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
