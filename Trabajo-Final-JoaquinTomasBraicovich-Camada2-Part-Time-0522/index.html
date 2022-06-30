@@ -12,25 +12,22 @@
     ></script>
   </head>
   <body>
-    <form action="data.html" method="get">
       <header>
         <div>
-          <div>
             <h1>manage</h1>
-          </div>
-          <div>
-            <a href="#">Pricing</a>
-            <a href="#">Product</a>
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Community</a>
-          </div>
-          <div>
+          <nav>
+              <ul type="none" class="categorias_header">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
+              </ul>
+          </nav>
             <button type="submit" name="GetStarted" id="GetStarted">
               Get Started
             </button>
             <i class="fa-solid fa-align-justify"></i>
-          </div>
         </div>
       </header>
       <main>
@@ -129,10 +126,11 @@
             </div>
           </article>
         </section>
-        <span class="boton">
-          <button type="submit" name="GetStarted" id="">Get Started</button>
-        </span>
+        <!-- SECCION ANTES DEL FOOTER -->
         <section>
+          <span class="boton">
+            <button type="submit" name="GetStarted" id="">Get Started</button>
+          </span>
           <div class="antes_del_footer">
             <h2>Simplify hoy your team words today.</h2>
             <div class="boton">
@@ -163,37 +161,27 @@
             ></a>
           </div>
         </div>
-        <section class="categorias_footer">
-          <article>
-            <div><a href="#">Home</a></div>
-            <div><a href="#">Pricing</a></div>
-            <div><a href="#">Products</a></div>
-            <div><a href="#">About Us</a></div>
-          </article>
-          <article>
-            <div>
-              <a href="#">Careers</a>
-            </div>
-            <div><a href="#">Community</a></div>
-            <div><a href="#">Privacy Policy</a></div>
-          </article>
-        </section>
+        <div class="categorias_footer">
+          <nav>
+            <ul><a href="#">Home</a></ul>
+            <ul><a href="#">Pricing</a></ul>
+            <ul><a href="#">Products</a></ul>
+            <ul><a href="#">About Us</a></ul>
+          </nav>
+          <nav>
+            <ul><a href="#">Careers</a></ul>
+            <ul><a href="#">Community</a></ul>
+            <ul><a href="#">Privacy Policy</a></ul>
+          </nav>
+        </div>
         <div class="formulario">
-          <div class="boton_footer">
-            <input
-              type="email"
-              name="Go"
-              id="Go"
-              placeholder="Updates in your inbox..."
-              required="@"
-            />
-            <button type="submit" name="Go" id="">Go</button>
-          </div>
-          <div>
-            <p>Copyright 2020. All Rights Reserved</p>
-          </div>
+            <form action="data.html" method="GET">
+            <input type="email" name="Go" id="Go" placeholder="Updates in your inbox..."
+              required="@"/>
+            <div><button type="submit" name="Go" id="">Go</button></div>
+            </form>
+            <div><p>Copyright 2020. All Rights Reserved</p></div>
         </div>
       </footer>
-    </form>
   </body>
 </html>

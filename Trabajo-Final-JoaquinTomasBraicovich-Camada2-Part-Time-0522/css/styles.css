@@ -12,36 +12,92 @@
 }
 body {
   font-family: "Be Vietnam Pro", sans-serif;
-  font-size: 10px;
-}
-header div {
-  align-items: center;
-  display: flex;
-  color: var(--blue);
-  flex-direction: row;
-  justify-content: space-around;
-  height: 100px;
-  width: 100%;
-}
-header div i {
-  color: var(--blue);
-  font-size: 2rem;
-  height: 50px;
-  text-align: center;
+  font-size: 62.5%;
 }
 h1 {
   color: var(--blue);
   font-size: 2rem;
-  padding: 0px 20px;
-  height: 50px;
-  width: 200px;
-  text-align: center;
 }
 h1::before {
   color: var(--orange);
   content: "\3a\3a";
   display: inline-block;
   font: var(--fa-font-solid);
+}
+h2,
+h5 {
+  color: var(--blue);
+  font-size: 2.3rem;
+  padding: 20px 30px;
+  text-align: center;
+  width: 400px;
+}
+h3 {
+  color: var(--blue);
+  padding: 25px 10px 10px 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+h4 {
+  border-radius: 15px;
+  color: var(--blue);
+  font-size: 0.9rem;
+  padding: 5px 5px 5px 5px;
+}
+h5 {
+  color: var(--white);
+}
+h5::before {
+  color: var(--orange);
+  content: "\3a\3a";
+  display: inline-block;
+  font: var(--fa-font-solid);
+}
+p {
+  color: var(--grey);
+  font-size: 1rem;
+  font-weight: 540;
+}
+.parrafo_black p {
+  color: black;
+  font-weight: bold;
+}
+button {
+  align-items: center;
+  background-color: var(--orange);
+  border-radius: 25px;
+  border: var(--orange);
+  color: var(--white);
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  width: 134px;
+}
+button:hover {
+  background-color: var(--blue);
+  color: var(--orange);
+}
+/* HEADER */
+header div {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 50px;
+  padding: 50px;
+  width: 100%;
+}
+.categorias_header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+header i {
+  color: var(--blue);
+  display: flex;
+  align-self: center;
+  font-size: 2rem;
 }
 i:active {
   color: var(--orange);
@@ -50,7 +106,7 @@ header a {
   font-size: 1.1rem;
   color: var(--blue);
 }
-/* //SECCION GRAFICOS// */
+/* PRIMERA SECCION: GRAFICOS */
 .section_graficos article {
   display: flex;
   flex-direction: column;
@@ -69,66 +125,6 @@ header a {
   padding: 30px;
   text-align: left;
   width: 375px;
-}
-button {
-  align-items: center;
-  background-color: var(--orange);
-  border-radius: 25px;
-  border: var(--orange);
-  color: var(--white);
-  display: flex;
-  height: 44px;
-  justify-content: center;
-  width: 134px;
-}
-button:hover {
-  background-color: var(--blue);
-  color: var(--orange);
-}
-.boton {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 30px;
-  padding: 15px;
-}
-p {
-  color: var(--grey);
-  font-size: 1rem;
-  font-weight: 540;
-}
-.parrafo_black p {
-  color: black;
-  font-weight: bold;
-}
-h3 {
-  color: var(--blue);
-  padding: 25px 10px 10px 10px;
-  font-size: 2rem;
-  text-align: center;
-}
-h2,
-h5 {
-  color: var(--blue);
-  font-size: 2.3rem;
-  padding: 20px 30px;
-  text-align: center;
-  width: 400px;
-}
-h4 {
-  border-radius: 15px;
-  color: var(--blue);
-  font-size: 0.9rem;
-  padding: 5px 5px 5px 5px;
-}
-h5 {
-  color: var(--white);
-}
-h5::before {
-  color: var(--orange);
-  content: "\3a\3a";
-  display: inline-block;
-  font: var(--fa-font-solid);
 }
 .contenedor_titulos {
   align-items: center;
@@ -153,6 +149,7 @@ h5::before {
   color: #242d52;
   font-weight: bold;
 }
+/* TERCERA SECCION: TARJETAS */
 .contenedor_tarjetas {
   display: flex;
   flex-direction: column;
@@ -191,6 +188,7 @@ section article div img {
   top: -40px;
   width: 70px;
 }
+/* CUARTA SECCION: ANTES DEL FOOTER */
 .antes_del_footer {
   background-color: var(--orange);
   display: flex;
@@ -206,20 +204,41 @@ section div button {
 div h2 {
   color: var(--white);
 }
+.boton {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 15px;
+}
+/* FOOTER */
 footer {
   display: flex;
   flex-direction: column-reverse;
   background-color: var(--blue);
-  height: 480px;
+  height: 430px;
   width: 100%;
-  padding-top: 20px;
 }
-input {
-  border-radius: 50px;
-  border: var(--white);
-  height: 50px;
-  padding-left: 10px;
-  width: 300px;
+footer p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.iconos__redes {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 10px;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--orange);
 }
 .categorias_footer {
   color: var(--white);
@@ -231,42 +250,38 @@ input {
   line-height: 30px;
   padding: 25px 5px 25px 5px;
 }
-a {
-  color: var(--white);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--orange);
-}
-.iconos__redes {
-  align-items: center;
-  color: var(--white);
-  display: flex;
-  font-size: 2rem;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0px 10px;
-}
-footer p {
-  font-size: 0.9rem;
-  text-align: center;
-}
 .formulario {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: 50px;
+  flex-direction: row;
   padding: 5px 15px;
 }
-.boton_footer {
+form {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 0.5rem;
 }
-@media screen and (min-width: 1400px) {
+input {
+  border-radius: 50px;
+  border: var(--white);
+  height: 50px;
+  padding-left: 10px;
+  width: 300px;
+}
+
+@media screen and (min-width: 1440px) {
+  .fa-solid.fa-align-justify {
+    display: none;
+  }
   .section_graficos {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .section_texto {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: space-evenly;
   }
   .contenedor_tarjetas,
   .antes_del_footer {
@@ -275,40 +290,37 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
   }
-  .section_texto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 35px;
-  }
-  .iconos__redes {
-    display: flex;
-    flex-direction: column;
-  }
   footer {
     align-items: center;
     background-color: #1e1e26;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     height: 350px;
+    justify-content: space-around;
+    gap: 100px;
   }
   .categorias_footer {
     gap: 200px;
   }
-  .fa-solid.fa-align-justify {
-    display: none;
+  .iconos__redes {
+    display: flex;
+    flex-direction: column;
   }
-  .iconos__redes div p {
-    display: none;
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   }
 }
-@media screen and (min-width: 912px) {
-  header div a {
-    font-size: 0.9rem;
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 2.2rem;
   }
   .fa-solid.fa-align-justify {
     display: none;
+  }
+  header div {
+    gap: 30px;
   }
   .section_graficos {
     display: flex;
@@ -332,30 +344,34 @@ footer p {
     flex-direction: row;
     gap: 150px;
   }
-  .iconos__redes {
-    display: flex;
-    flex-direction: column;
-  }
   footer {
     align-items: center;
     background-color: #1e1e26;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 350px;
-    padding: 0px 100px 0px 0px;
+    justify-content: center;
+    height: 300px;
   }
-  .fa-solid.fa-align-justify {
-    display: none;
+  .iconos__redes {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 300px;
   }
   .iconos__redes div p {
     display: none;
   }
-  input {
-    width: 150px;
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   }
-  h1 {
-    font-size: 2.2rem;
+  input {
+    width: 190px;
+  }
+  form div button {
+    height: 50px;
+    width: 90px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -363,6 +379,9 @@ footer p {
   header div button,
   .caja__tarjeta2 {
     display: none;
+  }
+  header div {
+    gap: 10px;
   }
   .formulario {
     display: flex;
@@ -380,5 +399,9 @@ footer p {
     flex-direction: column-reverse;
     gap: 10px;
     padding-bottom: 20px;
+  }
+  .antes_del_footer {
+    display: flex;
+    align-items: center;
   }
 }
