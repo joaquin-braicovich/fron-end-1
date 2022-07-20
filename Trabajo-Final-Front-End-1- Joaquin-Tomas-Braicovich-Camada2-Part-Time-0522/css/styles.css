@@ -306,6 +306,10 @@ input {
     display: flex;
     flex-direction: column;
   }
+  footer div h5 {
+    position: relative;
+    top: -25px;
+  }
   .formulario {
     display: flex;
     flex-direction: column;
@@ -357,6 +361,10 @@ input {
     flex-direction: column;
     padding: 0;
     width: 300px;
+  }
+  footer div h5 {
+    position: relative;
+    top: -25px;
   }
   .iconos__redes div p {
     display: none;
