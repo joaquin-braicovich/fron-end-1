@@ -95,6 +95,7 @@ img {
   color: aqua;
   grid-row: span 2;
   grid-column: span 3;
+/*   Con span indicamos cuantas celdas queremos que abarque nuestro item */
 }
 .grid-explicit .item:nth-child(15) {
   color: aqua;
@@ -141,8 +142,32 @@ img {
 .grid-implicit{
   /* Grid de 4cx3r */
   width: 40%;
-  display: grid;
-  display: inline-grid;
+  display: grid; /* Se comporta como bloque */
+  display: inline-grid; /* Se comporta como linea */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 200px);
+}
+.grid-flow{
+  display: grid;
+  /* Grid 5cx4r */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  grid-auto-flow: row;
+  grid-auto-rows: 150px;
+  grid-auto-flow: column;
+  grid-auto-columns: 150px;
+  /* Con grid-auto-rows/columns indicamos el tamaños de las celdas que se salen de la Grid explicita */
+}
+.grid-flow-dense{
+  display: grid;
+  /* Grid 5cx4r */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 125px);
+  grid-auto-flow: row dense;
+/*   Con el valor "dense" conseguimos que cuando hay celdas vacias, por el acomodo explicito de tu cuadricula, pueda tomar el lugar otro item(siempre y cuando coincida su tamaño). */
+}
+.grid-flow-dense .item:nth-child(9){
+  color: cyan;
+  grid-row: span 3;
+  grid-column: span 3;
 }
