@@ -8,22 +8,38 @@ html {
   font-size: 62px;
 }
 body {
-  border: 5px solid #ff7c8b;
+  border: 5px solid #ff7c8b75;
 }
-.header {
-  align-items: center;
+.header{
+  position: sticky;
+  top: 0;
+}
+.box{
+  background-image: url(/img/confeti.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  padding: 5px;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 5px 0px 5px;
+  height: 150px;
+  width: 100%;
 }
-.header img {
-  height: 100px;
-  width: 100px;
+.efectocinta{
+  position: sticky;
+  top: 1;
+}
+.box img {
+  height: 80px;
+  width: 80px;
+}
+span img{
+  width: 100%;
 }
 h1 {
   color: #ffcf5d;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   text-align: center;
 }
 h2 {
@@ -54,11 +70,6 @@ p {
   width: 100%;
   height: 100%;
 }
-.item3 {
-  background-image: url(/img/3.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 .h2-1 {
   background-color: #ff7c8b;
   border-radius: 15px;
@@ -66,14 +77,17 @@ p {
   margin: 10px;
   color: #ffcf5d;
 }
+.corazonverde{
+  color: #4FE267;
+}
 .h2-2 {
   padding: 5px;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 p i {
   color: #ff7c8b;
 }
-div img {
+.avion img{
   padding: 15px 15px 0px 15px;
   max-width: 365px;
   border-radius: 15%;
@@ -81,11 +95,16 @@ div img {
 footer {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #ff7c8b;
-  height: 110px;
+  height: 200px;
 }
 footer a i {
   color: #ffcf5d;
   text-decoration: none;
 }
+footer p{
+  color: white;
+}
+.a
